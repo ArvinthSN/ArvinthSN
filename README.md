@@ -100,8 +100,8 @@ I'm a passionate **Senior Software Engineer** with deep expertise in building sc
 ## Achievements
 
 <div align="center">
-  
-[![Trophy](https://github-profile-trophy.vercel.app/?username=ArvinthSN&theme=nord&no-frame=true&row=1&column=7)](https://github.com/ArvinthSN)
+
+[![Trophy](https://github-profile-trophy.vercel.app/?username=ArvinthSN&theme=nord&no-frame=true&row=2&column=4)](https://github.com/ArvinthSN)
 
 </div>
 
@@ -110,8 +110,8 @@ I'm a passionate **Senior Software Engineer** with deep expertise in building sc
 ## Contribution Snake
 
 <div align="center">
-  
-![Snake animation](https://github.com/ArvinthSN/ArvinthSN/blob/output/github-contribution-grid-snake.svg)
+
+![Snake animation](https://raw.githubusercontent.com/ArvinthSN/ArvinthSN/output/github-contribution-grid-snake.svg)
 
 </div>
 
