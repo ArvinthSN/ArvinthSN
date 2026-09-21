@@ -2,274 +2,182 @@
 
 <div align="center">
 
-# 𝗔𝗥𝗩𝗜𝗡𝗧𝗛
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:1E3A8A,100:0891B2&height=260&section=header&text=ARVINTH%20S.N&fontSize=60&fontColor=00F0FF&animation=fadeIn&fontAlignY=38&desc=AI%20Engineer%20%7C%20Software%20Engineer%20%7C%20Data%20Analytics&descAlignY=58&descSize=20&descColor=9AE6FF" width="100%"/>
 
-## Software Developer • AI Engineer • Full Stack Builder
+<a href="https://github.com/arvinth-sn"><img src="https://img.shields.io/badge/GitHub-Profile-0891B2?style=for-the-badge&logo=github&logoColor=00F0FF&labelColor=0B0F19"/></a>
+<a href="https://linkedin.com/in/arvinth-sn"><img src="https://img.shields.io/badge/LinkedIn-Connect-0891B2?style=for-the-badge&logo=linkedin&logoColor=00F0FF&labelColor=0B0F19"/></a>
+<a href="#"><img src="https://img.shields.io/badge/Resume-Download-0891B2?style=for-the-badge&logo=readdotcv&logoColor=00F0FF&labelColor=0B0F19"/></a>
 
-**Building intelligent software systems that connect AI with real-world workflows.**
+<br/>
 
----
-
-### Expertise
-
-![Python](https://img.shields.io/badge/AI_Engineering-Expert-3776ab?style=flat-square&logo=python)
-![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?style=flat-square&logo=fastapi)
-![React](https://img.shields.io/badge/Frontend-React-61dafb?style=flat-square&logo=react)
-![Voice AI](https://img.shields.io/badge/Voice_AI-STT/TTS-FF6B35?style=flat-square)
-![Automation](https://img.shields.io/badge/Automation-Playwright-34A853?style=flat-square&logo=playwright)
+<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=2600&pause=900&color=22D3EE&center=true&vCenter=true&multiline=true&repeat=true&width=650&height=100&lines=%3E+Building+AI+Systems;%3E+Training+LLM+Applications;%3E+Engineering+Intelligent+Products;%3E+Open+Source+Contributor" alt="typing-svg" />
 
 </div>
 
----
+<br/>
 
-## 🧠 Professional Identity
+## `$` whoami
 
-I build **production-grade AI systems**, **scalable backend architectures**, and **intelligent automation workflows**. My work focuses on:
-
-- **AI Engineering**: LLMs, RAG systems, AI agents, voice AI, tool-calling architectures
-- **Backend Systems**: FastAPI, async systems, database design, REST APIs, authentication
-- **Full-Stack Development**: React, TypeScript, responsive UI, system integration
-- **Automation & Intelligence**: Browser automation, workflow automation, intelligent task execution
-- **Production Deployment**: Real-world systems, cloud infrastructure, monitoring, scaling
-
-I'm passionate about **building software that solves real problems**—not just experimental demos.
-
----
-
-## 🚀 Currently Building
-
-<div align="center">
-
-### **SYNOVA**
-**Autonomous Insurance Shopping Agent**
-
-<sub>Building an AI-powered system that automates insurance discovery, comparison, and renewal workflows.</sub>
-
-</div>
-
-**What SYNOVA Does:**
-- Understands user insurance needs through **natural language + voice interaction**
-- Discovers relevant policies using **RAG + policy intelligence**
-- Compares quotes across providers
-- Automates broker interactions via **browser automation**
-- Provides intelligent recommendations
-
-**Engineering Stack:**
-
-```
-                    USER
-                     │
-          ┌──────────▼──────────┐
-          │  SYNOVA AI AGENT    │
-          │  • LLM • Voice • UI │
-          └──────────┬──────────┘
-                     │
-          ┌──────────▼──────────┐
-          │   RAG + TOOLS       │
-          │ Policy Search Tools │
-          └──────────┬──────────┘
-                     │
-          ┌──────────▼──────────┐
-          │  Browser Automation │
-          │    (Playwright)     │
-          └──────────┬──────────┘
-                     │
-          ┌──────────▼──────────┐
-          │  Insurance Services │
-          │  + Quote Comparison │
-          └─────────────────────┘
+```yaml
+name:      Arvinth S.N
+role:      AI Engineer | Software Engineer | Data Analytics
+education: B.Sc Computer Science with Data Analytics
+college:   Dr. N.G.P Arts and Science College
+location:  Tiruppur / Coimbatore, India
+status:    Building | Learning | Shipping
 ```
 
-**Technologies:**
-- **AI & LLMs**: LangChain, OpenAI, Vector embeddings
-- **APIs**: FastAPI, REST, async Python
-- **Databases**: PostgreSQL (quotes, user data), MongoDB (policies, cache)
-- **Frontend**: React, TypeScript
-- **Automation**: Playwright, browser automation
-- **Voice**: STT/TTS integration
-- **Infrastructure**: Docker, cloud deployment
+<br/>
 
-**Status:** Active development | Exploring production deployment
-
----
-
-## 🛠️ Engineering Focus
-
-### **AI Engineering**
-- **AI Agents**: Autonomous task execution, tool calling, reasoning loops
-- **RAG Systems**: Vector embeddings, semantic search, context retrieval
-- **LLM Applications**: Prompt engineering, fine-tuning, cost optimization
-- **Voice AI**: STT (speech-to-text), TTS (text-to-speech), conversational AI
-- **Multi-step Reasoning**: Complex workflows, decision trees, state management
-
-### **Backend Engineering**
-- **FastAPI**: Modern async Python framework, scalable APIs
-- **REST Architecture**: Clean API design, proper HTTP semantics
-- **Async Systems**: Concurrent operations, efficient I/O, non-blocking workflows
-- **Database Design**: PostgreSQL (relational), MongoDB (document), schema optimization
-- **Authentication**: JWT, OAuth, session management
-
-### **Frontend Engineering**
-- **React**: Component architecture, state management, performance optimization
-- **TypeScript**: Type safety, scalable code, developer experience
-- **Modern UI**: Responsive design, accessibility, clean interactions
-- **System Integration**: API communication, real-time updates, data visualization
-
-### **Automation & Intelligence**
-- **Playwright**: Browser automation, test automation, workflow automation
-- **Web Scraping**: Intelligent data extraction
-- **Repetitive Task Automation**: Workflow optimization
-
-### **Infrastructure & DevOps**
-- **Version Control**: Git, GitHub workflows, CI/CD
-- **Containerization**: Docker, image optimization
-- **Deployment**: Railway, cloud platforms, environment management
-- **Monitoring**: Logging, error tracking, performance analysis
-
----
-
-## 💾 Technology Stack
-
-### **Languages**
-Python • JavaScript • TypeScript • Java • C
-
-### **AI & ML**
-LangChain • OpenAI API • Vector Search • RAG • AI Agents • STT/TTS
-
-### **Backend**
-FastAPI • SQLAlchemy • REST APIs • Async Python
-
-### **Frontend**
-React • TypeScript • HTML5 • CSS3 • Tailwind CSS
-
-### **Databases**
-PostgreSQL • MongoDB • SQLite • Vector DBs
-
-### **Automation**
-Playwright • Browser Automation
-
-### **DevOps & Infrastructure**
-Git • GitHub • Docker • Railway • Environment Config
-
----
-
-## 📊 Featured Projects
-
-### 🎯 **SYNOVA** — Autonomous Insurance Agent
-- **Problem**: Insurance shopping is tedious, fragmented, and time-consuming
-- **Solution**: AI agent that understands needs, discovers policies, compares quotes, automates workflows
-- **Stack**: FastAPI, React, PostgreSQL, MongoDB, Playwright, LangChain, OpenAI
-- **Focus**: AI agents, RAG, voice AI, production deployment
-- **Status**: Active development
-- **[Repository](https://github.com/ArvinthSN/synova)** | [Features](#)
-
----
-
-## 🎓 Achievements & Growth
-
-### 2024–2025: Foundations & Excellence
-- **🏆 Datathon Winner** — Data-driven problem solving
-- **🥈 IPL Auction Challenge** — 2nd Place | Algorithm optimization, competitive engineering
-- **🏅 NPTEL Programming in Java** — Silver + Topper | Strong fundamentals
-- **🏅 NPTEL Problem Solving & C** — Elite | Advanced problem-solving
-- **🏅 Python for Data Science** — IIT Madras | Applied data engineering
-- **🏅 Databricks** — Data Engineering Fundamentals
-
-### 2025–2026: AI & Production Engineering
-- **🤖 AI Engineering Focus** — LLMs, agents, RAG systems, voice AI
-- **🚀 SYNOVA Development** — Real-world AI application
-- **🌐 Open Source Journey** — Building toward meaningful contributions
-- **📚 Continuous Learning** — System design, production patterns, AI best practices
-
----
-
-## 🌍 Open Source & Community
-
-I believe in **contributing back to the ecosystem**. My open-source journey is focused on:
-
-- **Bug Fixes** — Solving real issues in projects I use
-- **Documentation** — Making tools easier to understand and use
-- **Testing** — Improving reliability and coverage
-- **Performance** — Optimizing critical paths
-- **Features** — Building capabilities that matter to the community
-- **DX Improvements** — Making developer experience smoother
-
-**Current Status**: Building production experience first → meaningful contributions second
-
-**Roadmap to Contribution:**
-1. **Good First Issues** — Understanding project workflows
-2. **Bug Fixes** — Solving concrete problems
-3. **Documentation PRs** — Clarifying usage and examples
-4. **Testing** — Improving code quality
-5. **Performance** — Optimizing bottlenecks
-6. **Features** — New capabilities
-7. **Maintainer-level Contribution** — Long-term stewardship
-
-*[Open source is built on foundation of production experience—I'm building that foundation now.]*
-
----
-
-## ⚡ Engineering Principles
-
-My approach to building software:
-
-- **Build first** → Avoid premature architecture decisions
-- **Clean design** → Code should be readable, maintainable, extensible
-- **Intentional APIs** → Think through contracts, backwards compatibility
-- **Clear data boundaries** → Respect separation of concerns
-- **Measure, then optimize** → Data-driven performance improvements
-- **AI solves workflows** → Not just text generation—real automation
-- **Automate the repetitive** → Free humans for creative work
-- **Test important behavior** → Focus on what matters
-- **Deployment is development** → Production experience shapes design
-- **Contribute back** → The ecosystem enabled my growth
-
----
-
-## 📈 GitHub Activity
+## `$` skills --list
 
 <div align="center">
 
-**I build in the open. Check my repositories for:**
-- Completed projects with clean architecture
-- Active development on SYNOVA and related AI systems
-- Learning through code and documentation
-- Contributions that demonstrate engineering quality
+**AI / ML**
 
-[View All Repositories](https://github.com/ArvinthSN?tab=repositories) | [Recent Activity](https://github.com/ArvinthSN?tab=overview)
+<img src="https://img.shields.io/badge/Python-0B0F19?style=for-the-badge&logo=python&logoColor=22D3EE"/>
+<img src="https://img.shields.io/badge/OpenAI-0B0F19?style=for-the-badge&logo=openai&logoColor=22D3EE"/>
+<img src="https://img.shields.io/badge/LangChain-0B0F19?style=for-the-badge&logo=langchain&logoColor=22D3EE"/>
+<img src="https://img.shields.io/badge/YOLOv8-0B0F19?style=for-the-badge&logo=yolo&logoColor=22D3EE"/>
+
+**Backend**
+
+<img src="https://img.shields.io/badge/Java-0B0F19?style=for-the-badge&logo=openjdk&logoColor=A78BFA"/>
+<img src="https://img.shields.io/badge/FastAPI-0B0F19?style=for-the-badge&logo=fastapi&logoColor=A78BFA"/>
+<img src="https://img.shields.io/badge/PostgreSQL-0B0F19?style=for-the-badge&logo=postgresql&logoColor=A78BFA"/>
+
+**Frontend**
+
+<img src="https://img.shields.io/badge/React-0B0F19?style=for-the-badge&logo=react&logoColor=34D399"/>
+
+**DevOps / Cloud**
+
+<img src="https://img.shields.io/badge/Docker-0B0F19?style=for-the-badge&logo=docker&logoColor=34D399"/>
+<img src="https://img.shields.io/badge/Kubernetes-0B0F19?style=for-the-badge&logo=kubernetes&logoColor=34D399"/>
 
 </div>
 
----
+<br/>
 
-## 🎯 What's Next
+## `$` skills --matrix
 
-**2026 Focus Areas:**
-- ✨ Launch SYNOVA to production
-- 🌐 Meaningful open-source contributions
-- 📚 Advanced system design patterns
-- 🚀 AI engineering at scale
-- 🏢 Real-world deployment experience
+```text
+Python       ████████████████████░  95%
+Java         ███████████████████░░  90%
+FastAPI      ███████████████████░░  90%
+PostgreSQL   █████████████████░░░░  85%
+React        ████████████████░░░░░  80%
+Docker       ███████████████░░░░░░  75%
+```
 
----
+<br/>
+
+## `$` projects --list
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🛰️ SYNOVA
+AI-powered Insurance Aggregation Platform
+
+`RAG` `Voice AI` `OCR` `Policy Comparison`
+
+</td>
+<td width="50%" valign="top">
+
+### 📊 Global LLM Market Analytics
+End-to-end analytics pipeline on the LLM market
+
+`ETL Pipeline` `PostgreSQL` `Power BI` `Tableau`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 📞 AI Call Analytics Platform
+Speech intelligence for customer calls
+
+`Speech-to-Text` `NLP` `Intent Detection`
+
+</td>
+<td width="50%" valign="top">
+
+### 🦉 Wildlife Monitoring Platform
+Real-time animal detection system
+
+`YOLOv8` `FastAPI` `Object Detection`
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+## `$` experience --timeline
+
+```text
+   ●  NitroWare — Internship
+   │
+   ●  Best Trainee Award
+   │
+   ●  ValueMomentum
+   │
+   ●  AI Engineer Journey — ongoing
+```
+
+<br/>
+
+## `$` achievements --show
 
 <div align="center">
 
-### Let's Build Something Extraordinary
+🥈 **NPTEL Java — Silver Medal**  ·  🏆 **Datathon Winner**  ·  🎖️ **Best Trainee Award**  ·  🤝 **NSS Activities**
 
-**Open to collaborations in:**
-- AI systems & agents
-- Full-stack projects
-- Open-source contributions
-- Real-world applications
+</div>
 
-**Connect:**
-- 📧 Email: [contact]
-- 💼 LinkedIn: [profile]
-- 🐦 Twitter: [@ArvinthSN]
+<br/>
 
----
+## `$` github-stats --live
 
-*Building the future, one system at a time.*
+<div align="center">
 
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=arvinth-sn&show_icons=true&theme=react&hide_border=true&bg_color=0B0F19&title_color=22D3EE&icon_color=A78BFA&text_color=9AE6FF" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=arvinth-sn&layout=compact&theme=react&hide_border=true&bg_color=0B0F19&title_color=22D3EE&text_color=9AE6FF" />
+
+<br/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=arvinth-sn&theme=react&hide_border=true&background=0B0F19&ring=22D3EE&fire=A78BFA&currStreakLabel=22D3EE" />
+
+</div>
+
+<br/>
+
+## `$` contribution-galaxy --render
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/arvinth-sn/arvinth-sn/main/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution graph" />
+
+<sub>Generated automatically by the <code>profile-3d-contrib</code> GitHub Action — see setup below.</sub>
+
+</div>
+
+<br/>
+
+## `$` activity --snake
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/arvinth-sn/arvinth-sn/output/github-contribution-grid-snake-dark.svg" alt="snake animation" width="100%"/>
+
+<sub>Generated automatically by the <code>platane/snk</code> GitHub Action — see setup below.</sub>
+
+</div>
+
+<br/>
+
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0891B2,100:0F172A&height=120&section=footer"/>
 </div>
