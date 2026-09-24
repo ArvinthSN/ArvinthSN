@@ -10,9 +10,11 @@
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=2600&pause=900&color=22D3EE&center=true&vCenter=true&multiline=true&repeat=true&width=650&height=100&lines=%3E+Building+AI+Systems;%3E+Training+LLM+Applications;%3E+Engineering+Intelligent+Products;%3E+Open+Source+Contributor" alt="typing-svg" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=26&color=%2322D3EE&height=67&duration=3000&center=true&vCenter=true&width=750&lines=%3E+Building+AI+Systems;%3E+Training+LLM+Applications;%3E+Engineering+Intelligent+Products;%3E+Open+Source+Contributor" alt="Animated introduction" />
 
 </div>
+
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%" alt="animated separator" />
 
 <br/>
 
@@ -166,9 +168,21 @@ Real-time animal detection system
 
 <br/>
 
+## `$` activity --live
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=arvinth-sn&theme=react-dark&hide_border=true&bg_color=0B0F19&color=22D3EE&line=0891B2&point=A78BFA" width="100%" alt="GitHub activity graph" />
+
+</div>
+
+<br/>
+
 ## `$` activity --snake
 
 <div align="center">
+
+<img src="https://i.imgur.com/x1KbuCq.gif" width="500" alt="Animated snake heading" />
 
 <img src="https://raw.githubusercontent.com/arvinth-sn/arvinth-sn/output/github-contribution-grid-snake-dark.svg" alt="snake animation" width="100%"/>
 
@@ -178,6 +192,8 @@ Real-time animal detection system
 
 <br/>
 
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%" alt="animated separator" />
+
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0891B2,100:0F172A&height=120&section=footer"/>
+<img src="https://capsule-render.vercel.app/api?type=shark&height=45&section=footer&reversal=false&color=0:0891B2,100:0F172A" width="100%" alt="animated footer" />
 </div>
