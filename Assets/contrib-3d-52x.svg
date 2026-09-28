@@ -9,6 +9,14 @@
       <animate attributeName="y2" values="1;0.92;1" dur="6s" repeatCount="indefinite" />
     </linearGradient>
 
+    <!-- moving shimmer gradient used as overlay -->
+    <linearGradient id="shimmerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.28"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
     <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
       <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000" flood-opacity="0.45"/>
     </filter>
@@ -56,14 +64,26 @@
         100% { opacity: 0.0; }
       }
 
+      /* animated glow for stronger bars */
+      #columns rect { filter: drop-shadow(0 6px 10px rgba(59,130,246,0.14)); }
+      .glow { animation: glow 4.5s ease-in-out infinite; }
+      @keyframes glow {
+        0% { filter: drop-shadow(0 4px 6px rgba(59,130,246,0.06)); }
+        50% { filter: drop-shadow(0 10px 18px rgba(99,102,241,0.18)); }
+        100% { filter: drop-shadow(0 4px 6px rgba(59,130,246,0.06)); }
+      }
+
       /* hover growth + pointer */
       #columns g { cursor: default; }
       #columns g:hover { cursor: pointer; }
       #columns g:hover rect {
-        transform: translateY(-10px) scale(1.08);
-        transition: transform 180ms ease-out;
+        transform: translateY(-12px) scale(1.1);
+        transition: transform 160ms cubic-bezier(.2,.8,.2,1);
       }
-      #columns g:hover polygon { opacity: 0.36; transition: opacity 180ms ease-out; }
+      #columns g:hover polygon { opacity: 0.42; transition: opacity 160ms cubic-bezier(.2,.8,.2,1); }
+
+      /* subtle rotating backdrop for the grid - applied via SMIL on the wrapper */
+      /* preserve small performant animations only */
     ]]></style>
   </defs>
 
@@ -93,6 +113,13 @@
     <!-- repeating pattern heights -->
     <!-- pattern: [12,36,60,100,76,100,56,28] -->
     <g id="columns">
+      <!-- add a slow tilt animation to the whole grid for subtle 3D effect -->
+      <animateTransform attributeName="transform" type="rotate" dur="16s" repeatCount="indefinite" values="0 500 200;2 500 200;0 500 200" additive="replace" />
+      <!-- moving shimmer overlay rectangle that sweeps left-to-right -->
+      <rect id="shimmer" x="-200" y="120" width="300" height="180" fill="url(#shimmerGrad)" opacity="0.0" transform="skewX(-12)">
+        <animate attributeName="x" from="-300" to="1000" dur="9s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;0.38;0" dur="9s" repeatCount="indefinite" />
+      </rect>
       <!-- each column: front rect, top face, right side -->
       <!-- step = 12 (8 width + 4 gap), depth offset = 4 -->
       <!-- baseline = 260 -->
