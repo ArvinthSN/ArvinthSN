@@ -127,6 +127,25 @@ React/Framer Motion examples removed from this README to keep the profile clean.
 ### DevOps
 - Docker
 - Git
+
+---
+
+## 📈 Contributions (Live)
+
+The contribution gallery below is generated from your GitHub contributions and updated by running the script in `scripts/generate_contrib_svg.py`.
+
+To regenerate with your username run:
+
+```bash
+python scripts/generate_contrib_svg.py --username YOUR_GITHUB_USERNAME
+```
+
+This produces `Assets/contrib-3d-52x.svg` which the README references. Run it locally, then commit and push to update the gallery on GitHub.
+
+<div align="center">
+  <img src="Assets/contrib-3d-52x.svg" alt="3D contributions" width="100%" />
+</div>
+
 - GitHub
 - Linux
 
