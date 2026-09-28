@@ -1,0 +1,344 @@
+<svg width="1000" height="360" viewBox="0 0 1000 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="3D Contributions - Arvinth S.N.">
+  <defs>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9b5cf6"/>
+      <stop offset="50%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="360" rx="18" fill="#07050f"/>
+  <rect x="18" y="18" width="964" height="324" rx="14" fill-opacity="0" stroke="url(#barGrad)" stroke-width="1.5"/>
+
+  <!-- base line -->
+  <line x1="40" y1="260" x2="920" y2="260" stroke="#0b1220" stroke-width="1"/>
+
+  <!-- 52 extruded bars (one per week) -->
+  <g transform="translate(40,0)" filter="url(#softShadow)">
+    <!-- parameters -->
+    <!-- barWidth = 8, gap = 4, depth = 6 -->
+
+    <!-- Precomputed height pattern (repeating 8-step wave) -->
+    <!-- heights array (px): [12, 36, 60, 100, 76, 100, 56, 28] repeated -->
+
+    <!-- columns -->
+    <!-- We'll draw each column as three shapes: side, top, front to simulate 3D -->
+
+    <!-- Generate columns -->
+    <!-- Column 0..51 -->
+
+    <!-- repeating height pattern -->
+    <!-- heights: [12,36,60,100,76,100,56,28] -> repeated across 52 weeks -->
+    <!-- columns block start -->
+    <!-- repeating pattern heights -->
+    <!-- pattern: [12,36,60,100,76,100,56,28] -->
+    <g id="columns">
+      <!-- each column: front rect, top face, right side -->
+      <!-- step = 12 (8 width + 4 gap), depth offset = 4 -->
+      <!-- baseline = 260 -->
+      <!-- generated columns -->
+      <g>
+        <!-- column 0 -->
+        <g>
+          <rect x="0" y="248" width="8" height="12" rx="2" fill="url(#barGrad)" />
+          <polygon points="0,248 8,248 12,244 4,244" fill="#ffffff" fill-opacity="0.06" />
+          <polygon points="8,248 12,244 12,260 8,260" fill="#000" fill-opacity="0.18" />
+        </g>
+        <!-- column 1 -->
+        <g transform="translate(12,0)">
+          <rect x="0" y="224" width="8" height="36" rx="2" fill="url(#barGrad)" />
+          <polygon points="0,224 8,224 12,220 4,220" fill="#ffffff" fill-opacity="0.06" />
+          <polygon points="8,224 12,220 12,260 8,260" fill="#000" fill-opacity="0.18" />
+        </g>
+        <!-- column 2 -->
+        <g transform="translate(24,0)">
+          <rect x="0" y="200" width="8" height="60" rx="2" fill="url(#barGrad)" />
+          <polygon points="0,200 8,200 12,196 4,196" fill="#ffffff" fill-opacity="0.06" />
+          <polygon points="8,200 12,196 12,260 8,260" fill="#000" fill-opacity="0.18" />
+        </g>
+        <!-- column 3 -->
+        <g transform="translate(36,0)">
+          <rect x="0" y="160" width="8" height="100" rx="2" fill="url(#barGrad)" />
+          <polygon points="0,160 8,160 12,156 4,156" fill="#ffffff" fill-opacity="0.06" />
+          <polygon points="8,160 12,156 12,260 8,260" fill="#000" fill-opacity="0.18" />
+        </g>
+        <!-- column 4 -->
+        <g transform="translate(48,0)">
+          <rect x="0" y="184" width="8" height="76" rx="2" fill="url(#barGrad)" />
+          <polygon points="0,184 8,184 12,180 4,180" fill="#ffffff" fill-opacity="0.06" />
+          <polygon points="8,184 12,180 12,260 8,260" fill="#000" fill-opacity="0.18" />
+        </g>
+        <!-- column 5 -->
+        <g transform="translate(60,0)">
+          <rect x="0" y="160" width="8" height="100" rx="2" fill="url(#barGrad)" />
+          <polygon points="0,160 8,160 12,156 4,156" fill="#ffffff" fill-opacity="0.06" />
+          <polygon points="8,160 12,156 12,260 8,260" fill="#000" fill-opacity="0.18" />
+        </g>
+        <!-- column 6 -->
+        <g transform="translate(72,0)">
+          <rect x="0" y="204" width="8" height="56" rx="2" fill="url(#barGrad)" />
+          <polygon points="0,204 8,204 12,200 4,200" fill="#ffffff" fill-opacity="0.06" />
+          <polygon points="8,204 12,200 12,260 8,260" fill="#000" fill-opacity="0.18" />
+        </g>
+        <!-- column 7 -->
+        <g transform="translate(84,0)">
+          <rect x="0" y="232" width="8" height="28" rx="2" fill="url(#barGrad)" />
+          <polygon points="0,232 8,232 12,228 4,228" fill="#ffffff" fill-opacity="0.06" />
+          <polygon points="8,232 12,228 12,260 8,260" fill="#000" fill-opacity="0.18" />
+        </g>
+        <!-- repeat the 8-step pattern across remaining columns -->
+        <!-- we'll generate the rest by translating multiples of 96px (8 columns * 12 step) -->
+      </g>
+      <!-- repeated groups for remaining columns (concise explicit blocks to reach 52) -->
+      <!-- columns 8..51 (repeating pattern) -->
+      <g>
+        <!-- columns 8-15 -->
+        <g transform="translate(96,0)">
+          <g transform="translate(0,0)">
+            <rect x="0" y="248" width="8" height="12" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,248 8,248 12,244 4,244" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,248 12,244 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(12,0)">
+            <rect x="0" y="224" width="8" height="36" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,224 8,224 12,220 4,220" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,224 12,220 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(24,0)">
+            <rect x="0" y="200" width="8" height="60" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,200 8,200 12,196 4,196" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,200 12,196 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(36,0)">
+            <rect x="0" y="160" width="8" height="100" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,160 8,160 12,156 4,156" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,160 12,156 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(48,0)">
+            <rect x="0" y="184" width="8" height="76" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,184 8,184 12,180 4,180" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,184 12,180 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(60,0)">
+            <rect x="0" y="160" width="8" height="100" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,160 8,160 12,156 4,156" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,160 12,156 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(72,0)">
+            <rect x="0" y="204" width="8" height="56" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,204 8,204 12,200 4,200" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,204 12,200 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(84,0)">
+            <rect x="0" y="232" width="8" height="28" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,232 8,232 12,228 4,228" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,232 12,228 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+        </g>
+
+        <!-- columns 16-23 -->
+        <g transform="translate(192,0)">
+          <g transform="translate(0,0)">
+            <rect x="0" y="248" width="8" height="12" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,248 8,248 12,244 4,244" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,248 12,244 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(12,0)">
+            <rect x="0" y="224" width="8" height="36" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,224 8,224 12,220 4,220" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,224 12,220 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(24,0)">
+            <rect x="0" y="200" width="8" height="60" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,200 8,200 12,196 4,196" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,200 12,196 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(36,0)">
+            <rect x="0" y="160" width="8" height="100" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,160 8,160 12,156 4,156" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,160 12,156 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(48,0)">
+            <rect x="0" y="184" width="8" height="76" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,184 8,184 12,180 4,180" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,184 12,180 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(60,0)">
+            <rect x="0" y="160" width="8" height="100" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,160 8,160 12,156 4,156" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,160 12,156 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(72,0)">
+            <rect x="0" y="204" width="8" height="56" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,204 8,204 12,200 4,200" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,204 12,200 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(84,0)">
+            <rect x="0" y="232" width="8" height="28" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,232 8,232 12,228 4,228" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,232 12,228 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+        </g>
+
+        <!-- columns 24-31 -->
+        <g transform="translate(288,0)">
+          <g transform="translate(0,0)">
+            <rect x="0" y="248" width="8" height="12" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,248 8,248 12,244 4,244" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,248 12,244 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(12,0)">
+            <rect x="0" y="224" width="8" height="36" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,224 8,224 12,220 4,220" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,224 12,220 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(24,0)">
+            <rect x="0" y="200" width="8" height="60" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,200 8,200 12,196 4,196" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,200 12,196 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(36,0)">
+            <rect x="0" y="160" width="8" height="100" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,160 8,160 12,156 4,156" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,160 12,156 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(48,0)">
+            <rect x="0" y="184" width="8" height="76" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,184 8,184 12,180 4,180" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,184 12,180 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(60,0)">
+            <rect x="0" y="160" width="8" height="100" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,160 8,160 12,156 4,156" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,160 12,156 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(72,0)">
+            <rect x="0" y="204" width="8" height="56" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,204 8,204 12,200 4,200" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,204 12,200 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(84,0)">
+            <rect x="0" y="232" width="8" height="28" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,232 8,232 12,228 4,228" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,232 12,228 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+        </g>
+
+        <!-- columns 32-39 -->
+        <g transform="translate(384,0)">
+          <g transform="translate(0,0)">
+            <rect x="0" y="248" width="8" height="12" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,248 8,248 12,244 4,244" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,248 12,244 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(12,0)">
+            <rect x="0" y="224" width="8" height="36" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,224 8,224 12,220 4,220" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,224 12,220 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(24,0)">
+            <rect x="0" y="200" width="8" height="60" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,200 8,200 12,196 4,196" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,200 12,196 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(36,0)">
+            <rect x="0" y="160" width="8" height="100" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,160 8,160 12,156 4,156" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,160 12,156 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(48,0)">
+            <rect x="0" y="184" width="8" height="76" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,184 8,184 12,180 4,180" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,184 12,180 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(60,0)">
+            <rect x="0" y="160" width="8" height="100" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,160 8,160 12,156 4,156" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,160 12,156 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(72,0)">
+            <rect x="0" y="204" width="8" height="56" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,204 8,204 12,200 4,200" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,204 12,200 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(84,0)">
+            <rect x="0" y="232" width="8" height="28" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,232 8,232 12,228 4,228" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,232 12,228 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+        </g>
+
+        <!-- columns 40-47 -->
+        <g transform="translate(480,0)">
+          <g transform="translate(0,0)">
+            <rect x="0" y="248" width="8" height="12" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,248 8,248 12,244 4,244" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,248 12,244 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(12,0)">
+            <rect x="0" y="224" width="8" height="36" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,224 8,224 12,220 4,220" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,224 12,220 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(24,0)">
+            <rect x="0" y="200" width="8" height="60" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,200 8,200 12,196 4,196" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,200 12,196 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(36,0)">
+            <rect x="0" y="160" width="8" height="100" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,160 8,160 12,156 4,156" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,160 12,156 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(48,0)">
+            <rect x="0" y="184" width="8" height="76" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,184 8,184 12,180 4,180" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,184 12,180 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(60,0)">
+            <rect x="0" y="160" width="8" height="100" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,160 8,160 12,156 4,156" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,160 12,156 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(72,0)">
+            <rect x="0" y="204" width="8" height="56" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,204 8,204 12,200 4,200" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,204 12,200 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(84,0)">
+            <rect x="0" y="232" width="8" height="28" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,232 8,232 12,228 4,228" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,232 12,228 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+        </g>
+
+        <!-- final columns 48-51 -> translate(576) block partially filled to reach 52 columns -->
+        <g transform="translate(576,0)">
+          <g>
+            <rect x="0" y="248" width="8" height="12" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,248 8,248 12,244 4,244" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,248 12,244 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(12,0)">
+            <rect x="0" y="224" width="8" height="36" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,224 8,224 12,220 4,220" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,224 12,220 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(24,0)">
+            <rect x="0" y="200" width="8" height="60" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,200 8,200 12,196 4,196" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,200 12,196 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+          <g transform="translate(36,0)">
+            <rect x="0" y="160" width="8" height="100" rx="2" fill="url(#barGrad)" />
+            <polygon points="0,160 8,160 12,156 4,156" fill="#ffffff" fill-opacity="0.06" />
+            <polygon points="8,160 12,156 12,260 8,260" fill="#000" fill-opacity="0.18" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <!-- columns block end -->
+
