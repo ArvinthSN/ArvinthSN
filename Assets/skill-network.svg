@@ -1,0 +1,70 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lineGrad1" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#A855F7"/>
+      <stop offset="1" stop-color="#00FFB3"/>
+    </linearGradient>
+    <linearGradient id="lineGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00D4FF"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="600" fill="#050816"/>
+
+  <g opacity="0.8" stroke-linecap="round">
+    <path d="M250 200L500 150L760 220L1000 200" stroke="url(#lineGrad1)" stroke-width="2.5" stroke-dasharray="10 12">
+      <animate attributeName="stroke-dashoffset" values="0;120" dur="14s" repeatCount="indefinite"/>
+    </path>
+    <path d="M250 200L500 330L760 260L1000 200" stroke="url(#lineGrad2)" stroke-width="2.5" stroke-dasharray="12 10">
+      <animate attributeName="stroke-dashoffset" values="0;120" dur="12s" repeatCount="indefinite"/>
+    </path>
+    <path d="M500 150L500 330L760 220L760 440L1000 200" stroke="#00FFB3" stroke-opacity="0.7" stroke-width="2" stroke-dasharray="8 10">
+      <animate attributeName="stroke-dashoffset" values="0;120" dur="16s" repeatCount="indefinite"/>
+    </path>
+    <path d="M250 400L500 330L760 440L1000 430" stroke="#00D4FF" stroke-width="2" stroke-dasharray="10 14">
+      <animate attributeName="stroke-dashoffset" values="0;120" dur="15s" repeatCount="indefinite"/>
+    </path>
+    <path d="M760 220L760 440" stroke="#A855F7" stroke-width="2" stroke-dasharray="8 12">
+      <animate attributeName="stroke-dashoffset" values="0;120" dur="18s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g filter="url(#glow)">
+    <circle cx="250" cy="200" r="22" fill="#050816" stroke="#A855F7" stroke-width="2"/>
+    <circle cx="500" cy="150" r="22" fill="#050816" stroke="#00FFB3" stroke-width="2"/>
+    <circle cx="760" cy="220" r="22" fill="#050816" stroke="#00D4FF" stroke-width="2"/>
+    <circle cx="1000" cy="200" r="22" fill="#050816" stroke="#A855F7" stroke-width="2"/>
+    <circle cx="500" cy="330" r="22" fill="#050816" stroke="#00FFB3" stroke-width="2"/>
+    <circle cx="760" cy="440" r="22" fill="#050816" stroke="#00D4FF" stroke-width="2"/>
+    <circle cx="1000" cy="430" r="22" fill="#050816" stroke="#A855F7" stroke-width="2"/>
+    <circle cx="250" cy="400" r="22" fill="#050816" stroke="#00FFB3" stroke-width="2"/>
+  </g>
+
+  <g font-family="Segoe UI, sans-serif" font-weight="700" text-anchor="middle" fill="#EAFBFF">
+    <text x="250" y="206" font-size="16">AI</text>
+    <text x="500" y="156" font-size="15">Backend</text>
+    <text x="760" y="226" font-size="15">Frontend</text>
+    <text x="1000" y="206" font-size="15">Cloud</text>
+    <text x="500" y="336" font-size="16">Data</text>
+    <text x="760" y="446" font-size="15">System</text>
+    <text x="1000" y="436" font-size="16">DevOps</text>
+    <text x="250" y="406" font-size="16">LLMs</text>
+  </g>
+
+  <g opacity="0.35">
+    <circle cx="120" cy="100" r="4" fill="#00FFB3"/>
+    <circle cx="1040" cy="90" r="4" fill="#A855F7"/>
+    <circle cx="1080" cy="500" r="4" fill="#00D4FF"/>
+    <circle cx="140" cy="500" r="4" fill="#00FFB3"/>
+    <circle cx="620" cy="80" r="4" fill="#00D4FF"/>
+    <circle cx="620" cy="520" r="4" fill="#A855F7"/>
+  </g>
+</svg>
