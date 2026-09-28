@@ -5,6 +5,10 @@ Theme: Neon violet, electric blue, emerald green, glassmorphism, cyberpunk
 -->
 
 <div align="center">
+  <img src="Assets/arvinth_name_banner (1).svg" width="100%" alt="Arvinth name banner" />
+</div>
+
+<div align="center">
   <img src="Assets/profile-hero.svg" width="100%" alt="Arvinth S.N. Hero Banner" />
 </div>
 
@@ -626,4 +630,24 @@ Every commit tells a story.
 
 <div align="center">
   <img src="Assets/image.png" width="100%" alt="Arvinth S.N. final artwork" />
+</div>
+
+---
+
+## 😂 Comedy Corner
+
+A little levity before the finale — because engineers need memes.
+
+<div align="center">
+  <img src="Assets/phone-on.gif" alt="funny phone" width="320" style="margin-right:12px;border-radius:12px;box-shadow:0 8px 30px rgba(168,85,247,0.12);" />
+  <img src="Assets/trust me.gif" alt="trust me" width="320" style="border-radius:12px;box-shadow:0 8px 30px rgba(34,211,238,0.12);" />
+</div>
+
+<p align="center"><em>When in doubt, debug with coffee ☕ and memes.</em></p>
+
+---
+
+<div align="center">
+  <h2 style="color:#A855F7; margin: 8px 0 4px 0;">THANK YOU</h2>
+  <p style="color:#22d3ee; margin: 0 0 18px 0;">Thanks for visiting — let’s build something awesome together.</p>
 </div>
