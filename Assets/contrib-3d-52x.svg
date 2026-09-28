@@ -4,10 +4,67 @@
       <stop offset="0%" stop-color="#9b5cf6"/>
       <stop offset="50%" stop-color="#22d3ee"/>
       <stop offset="100%" stop-color="#34d399"/>
+      <!-- subtle shimmer by moving the gradient's y position -->
+      <animate attributeName="y1" values="0;0.08;0" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="y2" values="1;0.92;1" dur="6s" repeatCount="indefinite" />
     </linearGradient>
+
     <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
       <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000" flood-opacity="0.45"/>
     </filter>
+
+    <!-- Inline styles and keyframes for animated behavior inside the SVG -->
+    <style type="text/css"><![CDATA[
+      /* target only the contribution columns */
+      #columns > g {
+        transform-box: fill-box;
+        transform-origin: center bottom;
+        animation: float 3.6s ease-in-out infinite;
+      }
+
+      #columns rect {
+        transform-box: fill-box;
+        transform-origin: center bottom;
+        transition: transform 240ms linear, opacity 240ms linear;
+        will-change: transform, opacity;
+      }
+
+      #columns polygon { /* highlights and sides */
+        transition: opacity 360ms linear;
+        will-change: opacity;
+        animation: pulse 3.6s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0% { transform: translateY(0px) scaleY(1); }
+        50% { transform: translateY(-6px) scaleY(1.01); }
+        100% { transform: translateY(0px) scaleY(1); }
+      }
+
+      @keyframes pulse {
+        0% { opacity: 0.06; }
+        50% { opacity: 0.22; }
+        100% { opacity: 0.06; }
+      }
+
+      /* gentle shimmer overlay on top faces using opacity animation */
+      .top-shimmer { animation: shimmer 7s linear infinite; }
+      @keyframes shimmer {
+        0% { opacity: 0.0; }
+        45% { opacity: 0.24; }
+        55% { opacity: 0.12; }
+        100% { opacity: 0.0; }
+      }
+
+      /* hover growth + pointer */
+      #columns g { cursor: default; }
+      #columns g:hover { cursor: pointer; }
+      #columns g:hover rect {
+        transform: translateY(-10px) scale(1.08);
+        transition: transform 180ms ease-out;
+      }
+      #columns g:hover polygon { opacity: 0.36; transition: opacity 180ms ease-out; }
+    ]]></style>
   </defs>
 
   <rect width="1000" height="360" rx="18" fill="#07050f"/>
@@ -43,48 +100,56 @@
       <g>
         <!-- column 0 -->
         <g>
+          <title>Contributions: 12</title>
           <rect x="0" y="248" width="8" height="12" rx="2" fill="url(#barGrad)" />
           <polygon points="0,248 8,248 12,244 4,244" fill="#ffffff" fill-opacity="0.06" />
           <polygon points="8,248 12,244 12,260 8,260" fill="#000" fill-opacity="0.18" />
         </g>
         <!-- column 1 -->
         <g transform="translate(12,0)">
+          <title>Contributions: 36</title>
           <rect x="0" y="224" width="8" height="36" rx="2" fill="url(#barGrad)" />
           <polygon points="0,224 8,224 12,220 4,220" fill="#ffffff" fill-opacity="0.06" />
           <polygon points="8,224 12,220 12,260 8,260" fill="#000" fill-opacity="0.18" />
         </g>
         <!-- column 2 -->
         <g transform="translate(24,0)">
+          <title>Contributions: 60</title>
           <rect x="0" y="200" width="8" height="60" rx="2" fill="url(#barGrad)" />
           <polygon points="0,200 8,200 12,196 4,196" fill="#ffffff" fill-opacity="0.06" />
           <polygon points="8,200 12,196 12,260 8,260" fill="#000" fill-opacity="0.18" />
         </g>
         <!-- column 3 -->
         <g transform="translate(36,0)">
+          <title>Contributions: 100</title>
           <rect x="0" y="160" width="8" height="100" rx="2" fill="url(#barGrad)" />
           <polygon points="0,160 8,160 12,156 4,156" fill="#ffffff" fill-opacity="0.06" />
           <polygon points="8,160 12,156 12,260 8,260" fill="#000" fill-opacity="0.18" />
         </g>
         <!-- column 4 -->
         <g transform="translate(48,0)">
+          <title>Contributions: 76</title>
           <rect x="0" y="184" width="8" height="76" rx="2" fill="url(#barGrad)" />
           <polygon points="0,184 8,184 12,180 4,180" fill="#ffffff" fill-opacity="0.06" />
           <polygon points="8,184 12,180 12,260 8,260" fill="#000" fill-opacity="0.18" />
         </g>
         <!-- column 5 -->
         <g transform="translate(60,0)">
+          <title>Contributions: 100</title>
           <rect x="0" y="160" width="8" height="100" rx="2" fill="url(#barGrad)" />
           <polygon points="0,160 8,160 12,156 4,156" fill="#ffffff" fill-opacity="0.06" />
           <polygon points="8,160 12,156 12,260 8,260" fill="#000" fill-opacity="0.18" />
         </g>
         <!-- column 6 -->
         <g transform="translate(72,0)">
+          <title>Contributions: 56</title>
           <rect x="0" y="204" width="8" height="56" rx="2" fill="url(#barGrad)" />
           <polygon points="0,204 8,204 12,200 4,200" fill="#ffffff" fill-opacity="0.06" />
           <polygon points="8,204 12,200 12,260 8,260" fill="#000" fill-opacity="0.18" />
         </g>
         <!-- column 7 -->
         <g transform="translate(84,0)">
+          <title>Contributions: 28</title>
           <rect x="0" y="232" width="8" height="28" rx="2" fill="url(#barGrad)" />
           <polygon points="0,232 8,232 12,228 4,228" fill="#ffffff" fill-opacity="0.06" />
           <polygon points="8,232 12,228 12,260 8,260" fill="#000" fill-opacity="0.18" />
@@ -309,7 +374,7 @@
             <polygon points="8,204 12,200 12,260 8,260" fill="#000" fill-opacity="0.18" />
           </g>
           <g transform="translate(84,0)">
-            <rect x="0" y="232" width="8" height="28" rx="2" fill="url(#barGrad)" />
+            <rect x="0" y="232" width="8" height="28" rx="2" fill="url(#barGrad)" class="top-shimmer" />
             <polygon points="0,232 8,232 12,228 4,228" fill="#ffffff" fill-opacity="0.06" />
             <polygon points="8,232 12,228 12,260 8,260" fill="#000" fill-opacity="0.18" />
           </g>
@@ -318,7 +383,7 @@
         <!-- final columns 48-51 -> translate(576) block partially filled to reach 52 columns -->
         <g transform="translate(576,0)">
           <g>
-            <rect x="0" y="248" width="8" height="12" rx="2" fill="url(#barGrad)" />
+            <rect x="0" y="248" width="8" height="12" rx="2" fill="url(#barGrad)" class="top-shimmer" />
             <polygon points="0,248 8,248 12,244 4,244" fill="#ffffff" fill-opacity="0.06" />
             <polygon points="8,248 12,244 12,260 8,260" fill="#000" fill-opacity="0.18" />
           </g>
