@@ -587,7 +587,7 @@ Speech to Text • NLP • Classification • Real-Time Monitoring
 Every commit tells a story.
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/pavithran26/pavithran26/main/profile-3d-contrib/profile-night-rainbow.svg" width="1000" alt="3D contribution graph" />
+  <img src="Assets/contrib-3d-rainbow.svg" width="1000" alt="3D contribution graph" />
 </div>
 
 ---
