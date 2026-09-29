@@ -1,7 +1,7 @@
 <!--
 GitHub README — Premium AI Engineer Portfolio
 Designed for: Arvinth S.N.
-Theme: Neon violet, electric blue, emerald green, glassmorphism, cyberpunk
+Theme: Neon violet and black, electric blue, emerald green, glassmorphism, cyberpunk
 -->
 
 <div align="center">
