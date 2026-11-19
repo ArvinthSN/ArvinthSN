@@ -8,7 +8,7 @@
 </div>
 
 <div align="center">
-  <img src="Assets/profile-hero.svg" width="100%" alt="Abstract engineering and AI systems visual" />
+  <img src="Assets/engineering-motion.svg" width="100%" alt="Animated engineering systems visual showing data flowing between API, retrieval, and pipeline layers" />
 </div>
 
 <h1 align="center">Arvinth S.N.</h1>
