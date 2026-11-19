@@ -1,70 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
-  <title id="title">Engineering systems in motion</title>
-  <desc id="desc">A dark technical interface with animated data paths, orbiting nodes, and a pulsing system core.</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#080d1b"/>
-      <stop offset="1" stop-color="#11152b"/>
-    </linearGradient>
-    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#22d3ee" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#22d3ee"/>
-      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="glow">
-      <stop offset="0" stop-color="#8b5cf6" stop-opacity=".5"/>
-      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" fill="none" stroke="#8ba3c7" stroke-opacity=".10" stroke-width="1"/>
-    </pattern>
-    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-  </defs>
-  <rect width="1200" height="300" rx="22" fill="url(#bg)"/>
-  <rect width="1200" height="300" rx="22" fill="url(#grid)"/>
-  <circle cx="600" cy="145" r="140" fill="url(#glow)"/>
-  <g fill="none" stroke="#64748b" stroke-opacity=".45" stroke-width="1.5">
-    <path d="M75 75H300L390 145H810L900 75H1125"/>
-    <path d="M75 225H300L390 155H810L900 225H1125"/>
-    <path d="M170 150H390M810 150H1030"/>
-    <path d="M600 32V268" stroke-dasharray="3 9" opacity=".35"/>
-  </g>
-  <g fill="none" stroke="url(#line)" stroke-width="3" stroke-linecap="round">
-    <path d="M75 75H300L390 145H810L900 75H1125" stroke-dasharray="65 900">
-      <animate attributeName="stroke-dashoffset" from="965" to="0" dur="5s" repeatCount="indefinite"/>
-    </path>
-    <path d="M75 225H300L390 155H810L900 225H1125" stroke-dasharray="65 900">
-      <animate attributeName="stroke-dashoffset" from="0" to="-965" dur="6s" repeatCount="indefinite"/>
-    </path>
-  </g>
-  <g fill="#22d3ee" filter="url(#softGlow)">
-    <circle cx="170" cy="75" r="4"><animate attributeName="opacity" values=".25;1;.25" dur="2s" repeatCount="indefinite"/></circle>
-    <circle cx="1030" cy="225" r="4"><animate attributeName="opacity" values="1;.25;1" dur="2.4s" repeatCount="indefinite"/></circle>
-    <circle cx="300" cy="150" r="4"><animate attributeName="r" values="3;6;3" dur="2.2s" repeatCount="indefinite"/></circle>
-    <circle cx="900" cy="150" r="4"><animate attributeName="r" values="6;3;6" dur="2.2s" repeatCount="indefinite"/></circle>
-  </g>
-  <g transform="translate(600 150)">
-    <circle r="76" fill="none" stroke="#8b5cf6" stroke-opacity=".35" stroke-width="1.5" stroke-dasharray="5 8">
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="28s" repeatCount="indefinite"/>
-    </circle>
-    <circle r="58" fill="none" stroke="#22d3ee" stroke-opacity=".55" stroke-width="2" stroke-dasharray="80 25 12 25">
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="18s" repeatCount="indefinite"/>
-    </circle>
-    <circle r="39" fill="#111b36" stroke="#a78bfa" stroke-width="1.5"/>
-    <circle r="29" fill="#8b5cf6" opacity=".18">
-      <animate attributeName="r" values="25;34;25" dur="3s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values=".10;.32;.10" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <path d="M-13 0H13M0 -13V13" stroke="#e0f2fe" stroke-width="2" stroke-linecap="round"/>
-    <circle r="5" fill="#22d3ee" filter="url(#softGlow)"/>
-  </g>
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
-    <text x="64" y="42" fill="#67e8f9" font-size="12" letter-spacing="3">SYSTEMS / DATA / INTELLIGENCE</text>
-    <text x="64" y="275" fill="#94a3b8" font-size="11" letter-spacing="2">API LAYER  ·  RETRIEVAL  ·  PIPELINES</text>
-    <text x="1136" y="42" text-anchor="end" fill="#a78bfa" font-size="12" letter-spacing="2">LIVE SIGNAL</text>
-    <text x="1136" y="275" text-anchor="end" fill="#94a3b8" font-size="11" letter-spacing="2">ENGINEERING MODE</text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">Terminal and AI neural network animation</title>
+<desc id="desc">A developer terminal animates commands and output while a neural network sends glowing signals between connected nodes.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070b16"/><stop offset="1" stop-color="#111a32"/></linearGradient>
+  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#22d3ee" stop-opacity="0"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa" stop-opacity="0"/></linearGradient>
+  <radialGradient id="halo"><stop stop-color="#7c3aed" stop-opacity=".3"/><stop offset="1" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+  <filter id="glow" x="-150%" y="-150%" width="400%" height="400%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#94a3b8" stroke-opacity=".07"/></pattern>
+</defs>
+<rect width="1200" height="360" rx="22" fill="url(#bg)"/><rect width="1200" height="360" rx="22" fill="url(#grid)"/>
+<text x="42" y="38" fill="#67e8f9" font-family="monospace" font-size="12" letter-spacing="3">ENGINEERING / TERMINAL / INTELLIGENCE</text>
+<text x="1158" y="38" text-anchor="end" fill="#a78bfa" font-family="monospace" font-size="12" letter-spacing="2">AI CORE : ONLINE</text>
+<!-- terminal window -->
+<rect x="42" y="65" width="500" height="250" rx="13" fill="#080e1c" stroke="#334155" stroke-width="1.4"/>
+<path d="M42 103H542" stroke="#334155"/>
+<circle cx="64" cy="84" r="5" fill="#fb7185"/><circle cx="82" cy="84" r="5" fill="#fbbf24"/><circle cx="100" cy="84" r="5" fill="#4ade80"/>
+<text x="122" y="88" fill="#94a3b8" font-family="monospace" font-size="11">zsh — developer@workspace</text>
+<g font-family="monospace" font-size="14">
+  <text x="66" y="137" fill="#4ade80">$</text><text x="84" y="137" fill="#e2e8f0"> initialize-ai --mode=neural</text>
+  <text x="66" y="169" fill="#64748b">[system]</text><text x="133" y="169" fill="#a5b4fc"> Loading model runtime...</text>
+  <text x="66" y="201" fill="#64748b">[graph]</text><text x="133" y="201" fill="#67e8f9"> 24 nodes · 38 connections</text>
+  <text x="66" y="233" fill="#64748b">[status]</text><text x="133" y="233" fill="#4ade80"> Inference pipeline ready</text>
+  <text x="66" y="265" fill="#4ade80">$</text><text x="84" y="265" fill="#e2e8f0"> run intelligence()</text>
+  <text x="66" y="292" fill="#a78bfa">→ processing input</text>
+  <rect x="235" y="279" width="9" height="17" rx="1" fill="#22d3ee"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>
+  <g opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="6s" repeatCount="indefinite"/><text x="66" y="292" fill="#4ade80">→ response generated ✓</text></g>
+</g>
+<!-- bridge signals -->
+<path d="M542 185H650" stroke="#334155" stroke-width="2" stroke-dasharray="4 7"/>
+<path d="M542 185H650" stroke="url(#cyan)" stroke-width="3" stroke-dasharray="22 110"><animate attributeName="stroke-dashoffset" from="132" to="0" dur="2.4s" repeatCount="indefinite"/></path>
+<circle cx="650" cy="185" r="4" fill="#22d3ee" filter="url(#glow)"><animate attributeName="r" values="3;7;3" dur="2s" repeatCount="indefinite"/></circle>
+<!-- neural network -->
+<circle cx="900" cy="190" r="190" fill="url(#halo)"/>
+<g fill="none" stroke="#475569" stroke-opacity=".65" stroke-width="1.4">
+  <path d="M700 112L790 92L880 115L990 82L1100 125 M700 112L790 190L880 115L990 205L1100 125 M700 112L790 275L880 255L990 205L1100 280 M790 92L790 190L790 275 M880 115L880 255 M990 82L990 205L990 300 M700 112L790 92L880 255L990 300L1100 280"/>
+  <path d="M700 112L790 190L880 255L990 82L1100 125" stroke="#22d3ee" stroke-opacity=".35" stroke-dasharray="3 8"/>
+</g>
+<g fill="none" stroke="url(#cyan)" stroke-width="2.5" stroke-linecap="round">
+  <path d="M700 112L790 190L880 115L990 205L1100 125" stroke-dasharray="16 500"><animate attributeName="stroke-dashoffset" from="516" to="0" dur="3.5s" repeatCount="indefinite"/></path>
+  <path d="M700 112L790 275L880 255L990 205L1100 280" stroke-dasharray="16 500"><animate attributeName="stroke-dashoffset" from="0" to="-516" dur="4.2s" repeatCount="indefinite"/></path>
+</g>
+<g fill="#0f172a" stroke="#22d3ee" stroke-width="2" filter="url(#glow)">
+  <circle cx="700" cy="112" r="8"/><circle cx="790" cy="92" r="7"/><circle cx="790" cy="190" r="9"/><circle cx="790" cy="275" r="7"/>
+  <circle cx="880" cy="115" r="9"/><circle cx="880" cy="255" r="8"/><circle cx="990" cy="82" r="7"/><circle cx="990" cy="205" r="10"/><circle cx="990" cy="300" r="7"/><circle cx="1100" cy="125" r="8"/><circle cx="1100" cy="280" r="8"/>
+</g>
+<g fill="#67e8f9">
+  <circle cx="790" cy="190" r="3"><animate attributeName="r" values="2;5;2" dur="1.8s" repeatCount="indefinite"/></circle>
+  <circle cx="990" cy="205" r="4"><animate attributeName="r" values="3;6;3" dur="2.2s" repeatCount="indefinite"/></circle>
+</g>
+<g font-family="monospace" font-size="11" fill="#94a3b8"><text x="700" y="330">INPUT</text><text x="860" y="330">HIDDEN LAYERS</text><text x="1060" y="330">OUTPUT</text></g>
+<text x="600" y="345" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="10" letter-spacing="2">CODE IN  ·  SIGNAL THROUGH  ·  INTELLIGENCE OUT</text>
 </svg>
